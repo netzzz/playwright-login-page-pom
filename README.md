@@ -4,6 +4,7 @@
 * [Test Cases Breakdown](#test-cases-breakdown)
 * [Best Practices Highlighted](#best-practices-highlighted)
 * [Instructions to Execute the Tests Locally](#instructions-to-execute-the-tests-locally)  
+* [Test Logs](#test-logs)  
 
 ### Overview  
 This Test Suite, written in Playwright with TypeScript, validates different Scenarios of Login Functionality for a Web Application.  
@@ -68,10 +69,14 @@ test('login with valid username and valid password', ...)
 1) Clone this repository
 2) Make sure you have node.js installed. If you don't, please visit official website for instructions
 3) Run 'npm install' to install node modules
-4) Run tests with 'npx playwright test --ui' - it will open UI mode so you can explore,
+4) Add User Environment Variable 'SECRET_KEY' with value '1223315678594234'
+5) Run tests with 'npx playwright test --ui' - it will open UI mode so you can explore,
 run and debug tests with a time travel experience complete with watch mode.
 
-For other ways to run tests you can check Playwright Documentation - https://playwright.dev/docs/running-tests
+For other ways to run tests you can check Playwright Documentation - https://playwright.dev/docs/running-tests  
+
+### Test Logs  
+* After each run, Test Log is stored in a timestamped .log file within the 'logs' directory
 
 
 
