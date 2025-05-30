@@ -1,4 +1,5 @@
 import { expect, type Page } from '@playwright/test';
+import { Logging } from '../../utils/logging-utils';
 
 export default class LoginLandingPage {
     private readonly page: Page;
@@ -13,7 +14,17 @@ export default class LoginLandingPage {
 
     // Methods
 
-    async verifySuccessfulLogin(){
+    public async verifySuccessfulLogin(){
+        try {
+            await this.checkIfSuccessfulLoginMessageIsVisible();
+            Logging.logInfo("Succesful Login Message is Visible");
+        }
+        catch(err){
+            Logging.logError(err);
+        }
+    }
+
+    private async checkIfSuccessfulLoginMessageIsVisible(){
         await expect(this.successfulLoginMessage()).toBeVisible();
     }
 }

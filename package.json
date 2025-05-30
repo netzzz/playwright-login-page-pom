@@ -14,5 +14,9 @@
   "devDependencies": {
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.17"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "winston": "^3.17.0"
   }
 }
