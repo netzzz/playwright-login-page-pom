@@ -76,8 +76,8 @@ export default class LoginPracticePage {
 
     public async submitLoginForm() {
         try{
-        await this.clickSubmit()
-        Logging.logInfo("Login Form is Submitted");
+            await this.clickSubmit()
+            Logging.logInfo("Login Form is Submitted");
         }
         catch (err) {
             Logging.logError(err);
