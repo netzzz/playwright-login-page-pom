@@ -4,7 +4,8 @@
 * [Test Cases Breakdown](#test-cases-breakdown)
 * [Best Practices Highlighted](#best-practices-highlighted)
 * [Instructions to Execute the Tests Locally](#instructions-to-execute-the-tests-locally)  
-* [Test Logs](#test-logs)  
+* [Test Logs](#test-logs)
+* [Unit Tests](#unit-tests)  
 
 ### Overview  
 This Test Suite, written in Playwright with TypeScript, validates different Scenarios of Login Functionality for a Web Application.  
@@ -64,6 +65,7 @@ test('login with valid username and valid password', ...)
 * Page Object Model (POM) usage for cleaner and reusable selectors/actions.
 * Data-Driven Testing: Centralized data access via LoginPageData.
 * Clear Validation: Use of explicit error types improves test clarity and maintainability.
+* Unit Tests: Ensure that utility functions behave as intended and produce correct results.
 
 ### Instructions to Execute the Tests Locally
 1) Clone this repository
@@ -76,7 +78,10 @@ run and debug tests with a time travel experience complete with watch mode.
 For other ways to run tests you can check Playwright Documentation - https://playwright.dev/docs/running-tests  
 
 ### Test Logs  
-* After each run, Test Log is stored in a timestamped .log file within the 'logs' directory
+After each run, Test Log is stored in a timestamped .log file within the 'logs' directory
+
+### Unit Tests
+Unit tests have been implemented for the Encrypt and Decrypt functions. Run them using 'npm test'.
 
 
 
