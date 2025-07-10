@@ -9,6 +9,15 @@ export default class LoginPracticePage {
         this.page = page;
     }
 
+    // Locators
+
+    usernameInput = () => this.page.locator("#username");
+    passwordInput = () => this.page.locator("#password");
+    submitButton = () => this.page.locator("#submit");
+    errorElement = () => this.page.locator("#error");
+
+    // Methods
+
     public async openLoginPage() {
         try {
             await this.goToPage();
@@ -36,15 +45,6 @@ export default class LoginPracticePage {
     private async closePage() {
         await this.page.close();
     }
-
-    // Locators
-
-    usernameInput = () => this.page.locator("#username");
-    passwordInput = () => this.page.locator("#password");
-    submitButton = () => this.page.locator("#submit");
-    errorElement = () => this.page.locator("#error");
-
-    // Methods
 
     public async fillValueInUsernameField(username: string) {
         try {

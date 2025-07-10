@@ -16,7 +16,7 @@ const logFormat = printf(({ level, message, timestamp }) => {
 });
 
 // Create and export the logger
-const logger = createLogger({
+export const logger = createLogger({
   level: 'info',
   format: combine(
     timestamp(),
@@ -27,5 +27,3 @@ const logger = createLogger({
     new transports.Console()
   ],
 });
-
-export default logger;

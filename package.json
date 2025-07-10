@@ -6,14 +6,21 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@babel/preset-typescript": "^7.27.1",
+    "@jest/globals": "^30.0.3",
     "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.17"
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.15.17",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0"
   },
   "dependencies": {
     "crypto-js": "^4.2.0",

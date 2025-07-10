@@ -1,6 +1,6 @@
 import { test } from '../fixtures/practiceTestAutomationBasePage';
 import { LoginPageData, LoginErrorType } from '../support/test-data/loginPage.data';
-import logger from '../support/utils/logger';
+import { logger } from '../support/utils/logger';
 
 test.describe('login functionality test cases', () => {
     test.beforeEach(async ({ }, testInfo) => {
